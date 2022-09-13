@@ -1,0 +1,82 @@
+@import "variables";
+
+.texto-productos {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.texto-blog {
+@extend .texto-productos;
+}
+
+.texto-nosotros1 {
+    @extend .texto-productos
+}
+
+.texto-nosotros2 {
+    @extend .texto-productos
+}
+
+.img-nosotros {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 50px;
+}
+
+.img-productos {
+    @extend .img-nosotros;
+}
+
+.tabla-productos {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.video {
+@extend .img-nosotros;
+}
+
+.anchoFooter{
+    margin-top: 30px;
+}
+
+footer {
+    width: 100%;
+    background: var(--lav);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #00171F;
+}
+
+.anchoFooter{
+    margin-top: 30px;
+}
+
+    .redes{
+    display: inline-block
+}
+
+.bi-facebook {
+@include redes-sociales ($fb);
+}
+
+.bi-instagram {
+@include redes-sociales ($insta);
+}
+
+.bi-linkedin {
+@include redes-sociales ($linkedin);
+}
+
+.bi-youtube {
+@include redes-sociales ($youtube);
+}
+
+.btn-primary {
+    justify-self: center;
+}
+
